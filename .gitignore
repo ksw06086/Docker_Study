@@ -1,52 +1,29 @@
-# Prerequisites
-*.d
+# Docker
+Dockerfile.*.cache
+*.log
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+## PID 파일
+*.pid
+## macOS에서 생성하는 메타데이터 파일
+.DS_Store
+## 환경 변수 파일 (비밀 정보를 포함할 수 있습니다)
+.env
+## Vim 스왑 파일
+*.swp
+## JetBrains IDE에서 생성하는 프로젝트 설정 디렉터리
+.idea/
 
-# Linker output
-*.ilk
-*.map
-*.exp
 
-# Precompiled Headers
-*.gch
-*.pch
+# Docker Compose 임시 파일
+*.override.yml
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Docker Volume
+*.volume
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
